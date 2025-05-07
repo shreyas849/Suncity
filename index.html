@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Suncity Bakers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="logo">Suncity Bakers</div>
+    <ul>
+      <li><a href="#home">Homepage</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="hero">
+    <h1>Welcome to Suncity Bakers</h1>
+    <p>Sweetness Made with Love</p>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>We are a family-run sweet shop delivering delicious Indian sweets using traditional recipes and fresh ingredients.</p>
+  </section>
+
+  <section id="products" class="products">
+    <h2>Our Products</h2>
+    <div class="product-list">
+      <div class="product">
+        <img src="images/cookies.jpg" alt="cookies">
+        <h3>cookies</h3>
+        <p>₹260</p>
+      </div>
+      
+      <div class="product">
+        <img src="images/muffins.jpg" alt="muffins">
+        <h3>muffins</h3>
+        <p>₹180</p>
+      </div>
+      <div class="product">
+        <img src="images/pastry.jpg" alt="pastry">
+        <h3>pastry</h3>
+        <p>₹300</p>
+      </div>
+    </div>
+
+    <div class="order-form">
+      <h3>Place Your Order</h3>
+      <form onsubmit="submitOrder(event)">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="text" id="items" placeholder="Sweets & Quantity" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <button type="submit">Order via Email</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="submitContact(event)">
+      <input type="text" id="contactName" placeholder="Your Name" required>
+      <input type="email" id="contactEmail" placeholder="Your Email" required>
+      <textarea id="contactMessage" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>Email us: <a href="mailto:suncitybakers22@gmail.com">suncitybakers22@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Suncity Bakers. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
